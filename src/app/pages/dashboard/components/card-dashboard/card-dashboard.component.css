@@ -1,0 +1,25 @@
+.card-dashboad{
+  display: flex;
+  height: 200px;
+  width: 250px;
+  background-color: aquamarine;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card-dashboard__cantidad{
+
+  font-size: 50px;
+  font-weight: bold;
+
+
+}
+
+.card-dashboard__texto{
+
+  font-size: 15px;
+  font-weight: 600;
+
+
+}

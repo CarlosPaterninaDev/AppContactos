@@ -1,0 +1,12 @@
+<div class="card-contacto">
+  <div class="card-contacto__icon"><fa-icon [icon]="userCircle"></fa-icon> </div>
+  <div class="card-contacto__info">
+    <div class="card-contacto__nombre">{{contacto.fullName}}</div>
+    <div class="card-contacto__contacto">{{contacto.celular}}</div>
+    <div class="card-contacto__fecha">{{contacto.fechaCumpleanios | date : 'MMM d, y'}}</div>
+  </div>
+  <div class="card-contacto__opciones">
+    <div (click)="deleteContacto()" class="card-contacto__delete"><fa-icon [icon]="trash"></fa-icon></div>
+    <div  (click)="editContacto()" class="card-contacto__edit"><fa-icon [icon]="edit"></fa-icon></div>
+  </div>
+</div>

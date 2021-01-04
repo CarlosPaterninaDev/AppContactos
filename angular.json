@@ -87,7 +87,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/Roboto.css"
             ],
             "scripts": []
           }
@@ -120,5 +121,8 @@
       }
     }
   },
-  "defaultProject": "contactos"
+  "defaultProject": "contactos",
+  "cli": {
+    "analytics": false
+  }
 }

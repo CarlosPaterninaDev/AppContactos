@@ -1,0 +1,10 @@
+<div class="main-contacto">
+  <div (click)="crearContacto()" class="main-contacto__nuevo-contacto">
+    <fa-icon [icon]="userPlus"></fa-icon>
+    <p>Nuevo Contacto</p>
+  </div>
+
+  <div class="main-contacto__listado-contacto">
+    <app-card-contacto (contactoSeleccionado)="eliminarContacto($event)" [contacto]="contacto" *ngFor="let contacto of contactos"></app-card-contacto>
+  </div>
+</div>

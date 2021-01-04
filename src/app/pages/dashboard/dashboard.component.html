@@ -1,0 +1,8 @@
+
+<div class="main-dashboard">
+
+  <app-card-dashboard [cantidad]="_contacto.getCantidadContactos()" texto="Total de contactos"></app-card-dashboard>
+  <app-card-dashboard [cantidad]="_contacto.getHappyBirthDayToday()" texto="Happy Birthday today"></app-card-dashboard>
+  <button (click)="verContactos()" class="main-dashboard__buttom">Mis contactos</button>
+
+</div>
