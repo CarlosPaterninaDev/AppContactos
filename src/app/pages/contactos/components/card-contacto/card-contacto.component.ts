@@ -24,7 +24,7 @@ export class CardContactoComponent implements OnInit {
   @Output() contactoSeleccionado = new EventEmitter<IContacto>();
 
 
-  constructor(private router: Router, private _contacto: ContactoService) {}
+  constructor(private router: Router, public _contacto: ContactoService) {}
 
   ngOnInit(): void {}
 

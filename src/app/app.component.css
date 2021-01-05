@@ -1,27 +1,24 @@
-.main-container{
+.main-container {
   height: 100vh;
   width: 100vw;
   display: grid;
   grid-template-rows: 80px 1fr;
   grid-template-columns: minmax(375px, 1fr);
-  grid-template-areas: 'header' 
-                        'content';
+  grid-template-areas:
+    "header"
+    "content";
 }
 
-
-.header{
+.header {
   grid-area: header;
 
-
-  background-color: #F2F8F9;
+  background-color: #f2f8f9;
 }
-.content{
+.content {
   grid-area: content;
   height: 100%;
   width: 90%;
   margin: 0 auto;
   padding: 40px 0;
   /* background-color: aquamarine; */
-
-
 }
