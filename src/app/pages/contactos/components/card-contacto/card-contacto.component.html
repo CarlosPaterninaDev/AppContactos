@@ -1,7 +1,7 @@
-<div class="card-contacto">
+<div  class="card-contacto animate__animated animate__fadeIn animate__faster">
   <div class="card-contacto__icon"><fa-icon [icon]="userCircle"></fa-icon> </div>
   <div class="card-contacto__info">
-    <div class="card-contacto__nombre">{{contacto.fullName}}</div>
+    <div class="card-contacto__nombre">{{contacto.fullName}} <fa-icon class="card-contacto__cumple" *ngIf="_contacto.getCumplimentado(contacto)" [icon]="cumple"></fa-icon>    </div>
     <div class="card-contacto__contacto">{{contacto.celular}}</div>
     <div class="card-contacto__fecha">{{contacto.fechaCumpleanios | date : 'MMM d, y'}}</div>
   </div>

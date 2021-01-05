@@ -11,7 +11,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~11.0.3",
+    "@angular/animations": "^11.0.5",
     "@angular/common": "~11.0.3",
     "@angular/compiler": "~11.0.3",
     "@angular/core": "~11.0.3",
@@ -25,7 +25,9 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "moment": "^2.29.1",
+    "ngx-spinner": "^10.0.1",
     "rxjs": "~6.6.0",
+    "sweetalert2": "^10.12.7",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },

@@ -1,23 +1,25 @@
-.card-contacto{
+.card-contacto {
   display: flex;
   width: 100%;
   height: 50px;
   font-size: 12px;
-  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
   margin-bottom: 10px;
+  background: #f2f8f9;
   align-items: center;
 }
 
-.card-contacto__icon{
+.card-contacto__icon {
   flex: 1;
   font-size: 25px;
   width: 100%;
   text-align: center;
 }
-.card-contacto__info{
+.card-contacto__info {
   flex: 5;
 }
-.card-contacto__opciones{
+.card-contacto__opciones {
   flex: 2;
   display: flex;
   width: 100%;
@@ -27,21 +29,41 @@
   text-align: center;
 }
 
-
-.card-contacto__delete{
-  height: 30px;
-  width: 30px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  cursor: pointer;
-  margin-right: 5px;
-  line-height: 30px;
-
+.card-contacto__cumple {
+  font-size: 16px;
 }
-.card-contacto__edit{
+
+.card-contacto__delete {
   height: 30px;
   width: 30px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  cursor: pointer;
+  margin-right: 15px;
+  line-height: 30px;
+  border: none;
+  background-color: #f5ebea;
+  color: rgba(219, 33, 33, 0.924);
+  transition: all 0.3s;
+}
+
+.card-contacto__edit {
+  height: 30px;
+  width: 30px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  background-color: #f5ebea;
+  transition: all 0.3s;
+  border: none;
 
   cursor: pointer;
   line-height: 30px;
+}
+
+.card-contacto__edit:active {
+  transform: scale(0.95);
+}
+
+.card-contacto__delete:active {
+  transform: scale(0.95);
 }

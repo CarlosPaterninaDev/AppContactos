@@ -1,0 +1,110 @@
+<div class="form-container">
+  
+  <ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-scale-multiple"
+>
+  <p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner>
+
+  <form class="main-form animate__animated animate__fadeIn animate__faster" [formGroup]="form" (ngSubmit)="save($event)">
+    <div class="form-option">
+      <label class="form-option__label" for="id">
+        Número de identificación:
+      </label>
+      <input
+        class="form-option__input"
+        id="id"
+        type="number"
+        formControlName="id"
+      />
+      <p
+        class="form-option__valitador animate__animated animate__bounceIn"
+        *ngIf="getNoValido('id')"
+      >
+        * Campo Obligatorio
+      </p>
+    </div>
+
+    <div class="form-option">
+      <label class="form-option__label" for="fullName">
+        Nombre completo:
+      </label>
+      <input
+        class="form-option__input"
+        id="fullName"
+        type="text"
+        formControlName="fullName"
+      />
+      <p
+        class="form-option__valitador animate__animated animate__bounceIn"
+        *ngIf="getNoValido('fullName')"
+      >
+        * Campo Obligatorio
+      </p>
+    </div>
+
+    <div class="form-option">
+      <label class="form-option__label" for="celular"> Celular </label>
+      <input
+        class="form-option__input"
+        id="celular"
+        type="text"
+        formControlName="celular"
+      />
+      <p
+        class="form-option__valitador animate__animated animate__bounceIn"
+        *ngIf="getNoValido('celular')"
+      >
+        * Campo Obligatorio
+      </p>
+    </div>
+
+    <div class="form-option">
+      <label class="form-option__label" for="direccion"> Dirección </label>
+      <input
+        class="form-option__input"
+        id="direccion"
+        type="text"
+        formControlName="direccion"
+      />
+      <p
+        class="form-option__valitador animate__animated animate__bounceIn"
+        *ngIf="getNoValido('direccion')"
+      >
+        * Campo Obligatorio
+      </p>
+    </div>
+
+    <div class="form-option">
+      <label class="form-option__label" for="fechaCumpleanios">
+        Fecha de cumpleaños:
+      </label>
+      <input
+        class="form-option__input"
+        id="fechaCumpleanios"
+        type="date"
+        formControlName="fechaCumpleanios"
+      />
+      <p
+        class="form-option__valitador animate__animated animate__bounceIn"
+        *ngIf="getNoValido('fechaCumpleanios')"
+      >
+        * Campo Obligatorio
+      </p>
+    </div>
+
+    <div class="form-buttoms">
+      <button
+        class="form-buttom__guardar"
+        type="submit"
+        [disabled]="form.invalid"
+      >
+        Guardar
+      </button>
+      <button class="form-buttom__cancelar" type="reset">Cancelar</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,17 @@
+.main-crear {
+  display: flex;
+  height: 100%;
+  width: 80%;
+  flex-direction: column;
+  
+
+  margin: 0 auto;
+}
+
+.main-crear__title {
+  flex: 1;
+
+}
+.main-crear__form {
+  flex: 11;
+}

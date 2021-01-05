@@ -25,7 +25,7 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'actualizar-contacto',
+    path: 'actualizar-contacto/:user',
     loadChildren: () =>
       import('./pages/actualizar-contacto/actualizar-contacto.module').then(
         (m) => m.ActualizarContactoModule

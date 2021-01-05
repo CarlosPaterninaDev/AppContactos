@@ -12,14 +12,15 @@
 .header{
   grid-area: header;
 
-  /* background-color: aqua; */
+
+  background-color: #F2F8F9;
 }
 .content{
   grid-area: content;
   height: 100%;
   width: 90%;
   margin: 0 auto;
-  padding-top: 50px;
+  padding: 40px 0;
   /* background-color: aquamarine; */
 
 
